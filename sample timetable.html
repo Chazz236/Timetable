@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Sample Timetable?</title>
+  <link rel="stylesheet" href="timetable.css">
+</head>
+<body>
+  <header>
+    <div class='gpa'>
+      <!-- 0.0 -->
+    </div>
+    <br>
+    <button class='addCourse'>Add course</button>
+  </header>
+  <br>
+  <table>
+    <tr>
+      <th>Year</th>
+      <th>Course Name</th>
+      <th>Grade</th>
+      <th>Credits</th>
+      <th>Del</th>
+    </tr>
+    <!-- below table things go here -->
+  </table>
+
+  <!--<form action="#" method="post" autocomplete="off" novalidate> -->
+  <form autocomplete='off'>
+    <button class="close" type="button">X</button>
+    <ul>
+      <li>
+        <label for="name">Course Name<span aria-label="required">*</span>:</label>
+        <input type="text" id="name" name="course_name" required maxlength="28">
+      </li>
+      <li class="year">
+        <label for="year">Year<span aria-label="required">*</span>:</label>
+        <input type="text" id="year" name="course_year" required maxlength="10">
+      </li>
+      <li class="small">
+        <label for="grade">Grade<span aria-label="required">*</span>:</label>
+        <select id="grade" name="grade">
+          <option value="a+">A+</option>
+          <option value="a">A</option>
+          <option value="a-">A-</option>
+          <option value="b+">B+</option>
+          <option value="b">B</option>
+          <option value="b-">B-</option>
+          <option value="c+">C+</option>
+          <option value="c">C</option>
+          <option value="c-">C-</option>
+          <option value="d+">D+</option>
+          <option value="d">D</option>
+          <option value="e">D-</option>
+          <option value="f">F</option>
+        </select>
+        <span class="creds">
+          <label for="credits">Credits<span aria-label="required">*</span>:</label>
+          <input type="text" id="credits" name="course_credits" required>
+          <span class="error" aria-live="polite"></span>
+        </span>
+      </li>
+      <li>
+        <button class="submit" type="submit">Add</button>
+      </li>
+    </ul>
+  </form>
+  <script src='timetable.js' defer></script>
+</body>
+</html>
+
+
+
+<!--
+    <div class='search'>
+      <input type='search' class='search' name='q' autocomplete='off'>
+    </div>
+    <br>
+-->
+
+
+
+<!--
+      <tr>
+	<td>2017/2018</td>
+	<td>some engineering thing</td>
+	<td>A+++++++</td>
+	<td>4</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>some other engineering thing</td>
+	<td>F</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+      <tr>
+	<td>2017/2018</td>
+	<td>someone loves engineering</td>
+	<td>C</td>
+	<td>3</td>
+      </tr>
+-->
